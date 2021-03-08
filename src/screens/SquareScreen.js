@@ -26,6 +26,8 @@ const SquareScreen = () => {
           ? alert('value out of range')
           : setGreen(green + change);
         return;
+      default:
+        return;
     }
     return;
   };
