@@ -9,11 +9,13 @@ import ImageScreen from './src/screens/ImageScreen';
 import ListScreen from './src/screens/ListScreen';
 import SquareScreen from './src/screens/SquareScreen';
 import TextScreen from './src/screens/TextScreen';
+import BoxScreen from './src/screens/BoxScreen';
 
 import ColorCounter from './src/components/ColorCounter';
 
 const navigator = createStackNavigator(
   {
+    Box: BoxScreen,
     Color: ColorScreen,
     ColorCounter: ColorCounter,
     Components: ComponentsScreen,
