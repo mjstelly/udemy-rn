@@ -9,6 +9,10 @@
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.10",
+    "@types/jest": "^26.0.21",
+    "@types/react-navigation": "^3.4.0",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-test-renderer": "^17.0.1",
     "expo": "~40.0.0",
     "expo-cli": "^4.2.1",
     "expo-status-bar": "~1.0.3",
@@ -22,13 +26,16 @@
     "react-native-screens": "~2.15.0",
     "react-native-web": "~0.13.12",
     "react-navigation": "^4.4.3",
-    "react-navigation-stack": "^2.10.2"
+    "react-navigation-stack": "^2.10.2",
+    "ts-jest": "^26.5.4",
+    "tslib": "^2.1.0"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
     "@types/react": "^17.0.3",
-    "@types/react-native": "^0.63.51",
+    "@types/react-native": "^0.63.52",
     "react-native-typescript-transformer": "^1.2.13",
+    "tslint": "^6.1.3",
     "typescript": "^4.2.3"
   },
   "private": true
