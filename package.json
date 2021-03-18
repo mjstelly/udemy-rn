@@ -8,7 +8,9 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@react-native-community/masked-view": "^0.1.10",
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/native": "^5.9.3",
+    "@react-navigation/stack": "^5.14.3",
     "@types/jest": "^26.0.21",
     "@types/react-navigation": "^3.4.0",
     "@types/react-redux": "^7.1.16",
@@ -22,12 +24,9 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
     "react-native-gesture-handler": "~1.8.0",
     "react-native-reanimated": "~1.13.0",
-    "react-native-safe-area-context": "^3.1.9",
-    "react-native-screens": "~2.15.0",
+    "react-native-safe-area-context": "3.1.9",
+    "react-native-screens": "~2.15.2",
     "react-native-web": "~0.13.12",
-    "react-navigation": "^4.4.3",
-    "react-navigation-stack": "^2.10.2",
-    "ts-jest": "^26.5.4",
     "tslib": "^2.1.0"
   },
   "devDependencies": {
@@ -35,6 +34,7 @@
     "@types/react": "^17.0.3",
     "@types/react-native": "^0.63.52",
     "react-native-typescript-transformer": "^1.2.13",
+    "ts-jest": "^26.5.4",
     "tslint": "^6.1.3",
     "typescript": "^4.2.3"
   },
