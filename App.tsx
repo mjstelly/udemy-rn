@@ -45,11 +45,7 @@ const AppStack = () => {
     </RootStack.Navigator>
   );
 }
-const App = () => {
-  return (
-    <NavigationContainer>
-      <AppStack />
-    </NavigationContainer>
-  );
+
+export default function App() {
+  return <NavigationContainer><AppStack /></NavigationContainer>;
 }
-export default createAppContainer(App);
