@@ -1,5 +1,7 @@
-import { createAppContainer } from 'react-navigation';
-import { createStackNavigator } from 'react-navigation-stack';
+import 'react-native-gesture-handler';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
 import ColorScreen from './src/screens/ColorScreen';
 import ComponentsScreen from './src/screens/ComponentsScreen';
@@ -11,27 +13,63 @@ import SquareScreen from './src/screens/SquareScreen';
 import TextScreen from './src/screens/TextScreen';
 import BoxScreen from './src/screens/BoxScreen';
 
-import ColorCounter from './src/components/ColorCounter';
+// import ColorCounter from './src/components/ColorCounter';
 
-const navigator = createStackNavigator(
-  {
-    Box: BoxScreen,
-    Color: ColorScreen,
-    ColorCounter: ColorCounter,
-    Components: ComponentsScreen,
-    Counter: CounterScreen,
-    Home: HomeScreen,
-    Image: ImageScreen,
-    List: ListScreen,
-    Square: SquareScreen,
-    Text: TextScreen,
-  },
-  {
-    initialRouteName: 'Home',
-    defaultNavigationOptions: {
-      title: 'App',
-    },
-  }
-);
+const Screens = () => {
+  return (
+    <View>
+      <ColorScreen />
+      <ComponentsScreen />
+      <CounterScreen />
+      <HomeScreen />
+      <ImageScreen />
+      <ListScreen />
+      <SquareScreen />
+      <TextScreen />
+      <BoxScreen />
+    </View>
+  );
+};
 
-export default createAppContainer(navigator);
+const RootStack = createStackNavigator();
+
+// const RootStack = createStackNavigator(
+//   {
+//     Box: BoxScreen,
+//     Color: ColorScreen,
+//     ColorCounter: ColorCounter,
+//     Components: ComponentsScreen,
+//     Counter: CounterScreen,
+//     Home: HomeScreen,
+//     Image: ImageScreen,
+//     List: ListScreen,
+//     Square: SquareScreen,
+//     Text: TextScreen,
+//   },
+//   {
+//     initialRouteName: 'Home',
+//     defaultNavigationOptions: {
+//       title: 'App',
+//     },
+//   }
+// );
+
+// export default createAppContainer(navigator);
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <RootStack.Navigator initialRouteName="Home">
+        <RootStack.Screen name="Home" component={HomeScreen} />
+        <RootStack.Screen name="Color" component={ColorScreen} />
+        <RootStack.Screen name="Components" component={ComponentsScreen} />
+        <RootStack.Screen name="Counter" component={CounterScreen} />
+        <RootStack.Screen name="Image" component={ImageScreen} />
+        <RootStack.Screen name="List" component={ListScreen} />
+        <RootStack.Screen name="Square" component={SquareScreen} />
+        <RootStack.Screen name="Text" component={TextScreen} />
+        <RootStack.Screen name="Box" component={BoxScreen} />
+      </RootStack.Navigator>
+    </NavigationContainer>
+  );
+}
