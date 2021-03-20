@@ -1,5 +1,4 @@
 import React from 'react';
-import { createAppContainer } from 'react-navigation';
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from '@react-navigation/stack';
 
@@ -13,7 +12,7 @@ import SquareScreen from './src/screens/SquareScreen';
 import TextScreen from './src/screens/TextScreen';
 import BoxScreen from './src/screens/BoxScreen';
 
-import ColorCounter from './src/components/ColorCounter';
+// import ColorCounter from './src/components/ColorCounter';
 
 type RootStackParamList = {
   Box: undefined;
