@@ -13,48 +13,7 @@ import SquareScreen from './src/screens/SquareScreen';
 import TextScreen from './src/screens/TextScreen';
 import BoxScreen from './src/screens/BoxScreen';
 
-// import ColorCounter from './src/components/ColorCounter';
-
-const Screens = () => {
-  return (
-    <View>
-      <ColorScreen />
-      <ComponentsScreen />
-      <CounterScreen />
-      <HomeScreen />
-      <ImageScreen />
-      <ListScreen />
-      <SquareScreen />
-      <TextScreen />
-      <BoxScreen />
-    </View>
-  );
-};
-
 const RootStack = createStackNavigator();
-
-// const RootStack = createStackNavigator(
-//   {
-//     Box: BoxScreen,
-//     Color: ColorScreen,
-//     ColorCounter: ColorCounter,
-//     Components: ComponentsScreen,
-//     Counter: CounterScreen,
-//     Home: HomeScreen,
-//     Image: ImageScreen,
-//     List: ListScreen,
-//     Square: SquareScreen,
-//     Text: TextScreen,
-//   },
-//   {
-//     initialRouteName: 'Home',
-//     defaultNavigationOptions: {
-//       title: 'App',
-//     },
-//   }
-// );
-
-// export default createAppContainer(navigator);
 
 export default function App() {
   return (
